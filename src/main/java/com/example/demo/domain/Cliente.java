@@ -38,7 +38,6 @@ public class Cliente implements Serializable {
 		this.nome = nome;
 		this.linguagem = linguagem;
 		this.cidade = cidade;
-		
 		this.pais = pais;
 		this.telefone = telefone;
 		

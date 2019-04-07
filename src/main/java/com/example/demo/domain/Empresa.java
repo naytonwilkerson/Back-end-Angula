@@ -24,6 +24,7 @@ public class Empresa implements Serializable {
 	private String cidade;
 	private String pais;
 	private String telefone;
+	private String nomecli;
 	
 
 	public Empresa() {
@@ -31,7 +32,7 @@ public class Empresa implements Serializable {
 	}
 	
 	public Empresa(Integer codigo, String nome, String cargo, String endereco, String cidade, String pais,
-			String telefone) {
+			String telefone, String nomecli) {
 		super();
 		this.codigo = codigo;
 		this.nome = nome;
@@ -40,6 +41,7 @@ public class Empresa implements Serializable {
 		this.cidade = cidade;
 		this.pais = pais;
 		this.telefone = telefone;
+		this.nomecli = nomecli;
 		
 	}
 	
@@ -99,6 +101,14 @@ public class Empresa implements Serializable {
 
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
+	}
+
+	public String getNomecli() {
+		return nomecli;
+	}
+
+	public void setNomecli(String nomecli) {
+		this.nomecli = nomecli;
 	}
 
 }
